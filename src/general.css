@@ -1,0 +1,82 @@
+.center {
+    /*margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-family: 'Lucida Handwriting';
+    font-size:40px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background-color:royalblue;
+}
+
+.border {
+    border: 3px solid green;
+}
+
+.background {
+    margin-top: 0px;
+    background-color: bisque;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.txtarea {
+    margin: 10px;
+    height: 500px;
+    width: 800px;
+    resize: none;
+    font-size: 15px;
+    font-family: 'Lucida Sans';
+}
+
+.header2 {
+    margin: 10px;
+}
+
+.sidebar {
+    margin: 10px;
+    background-color:lightblue;
+    width: 500px;
+    height: 500px;
+    border-color: aquamarine;
+    border-width: 10px;
+}
+
+.inline {
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.sidebarBtn {
+    margin-top: 10px;
+    background-color: green;
+}
+
+.sidebarBtn:hover {
+    background-color: mediumseagreen;
+}
+
+.myImage {
+    margin: 10px;
+    width:200px;
+    height:200px;
+}
