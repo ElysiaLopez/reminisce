@@ -12,11 +12,30 @@ import {
   Route
  } from "react-router-dom";
 
+ class Memory{
+  constructor(date, text, pic = null)
+  {
+      this.date = date;
+      this.text = text;
+      this.pic = pic;
+  }
+}
+
+let test = "hello";
+
+let memories = new Array();
+
+let mem1 = new Memory("4/10/23", "hello!");
+let mem2 = new Memory("3/27/23", "goodbye");
+
+memories.push(mem1);
+memories.push(mem2);
+
 const Idk = () => {
   return(
     <Router>
       <Routes>
-        <Route path="/" element={<Homepage/>}/>
+        <Route path="/" element={<Homepage memories={memories}/>}/>
         <Route path="WriteMessage" element={<WriteMessage/>}/>
       </Routes>
     </Router>

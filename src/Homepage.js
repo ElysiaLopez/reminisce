@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import {Link} from "react-router-dom";
 
-function Homepage()
+function Homepage({memories})
 {
     return (
         <div className='background'>
@@ -18,27 +18,27 @@ function Homepage()
                 </div>
             </div>
             <hr className='headerline'></hr>
-            <Hippocampus></Hippocampus>
+            <Hippocampus memories={memories}></Hippocampus>
         </div>
     );
 }
 
-class Memory{
-    constructor(date, text, pic = null)
-    {
-        this.date = date;
-        this.text = text;
-        this.pic = pic;
-    }
+function Hippocampus({memories})
+{
+    return (
+        <div>
+            {
+                memories.map((mem) => (
+                    <MemoryCard date={mem.date} text={mem.text} onClick={memoryCardClicked}></MemoryCard>
+                ))
+            }
+        </div>
+    );
 }
 
-function Hippocampus()
+function memoryCardClicked(e)
 {
-    const [memories, setMemories] = useState(new Array());
-
-    return (
-        <MemoryCard></MemoryCard>
-    );
+    console.log("test");
 }
 
 export default Homepage;
