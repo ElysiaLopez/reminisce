@@ -6,11 +6,26 @@ import reportWebVitals from './reportWebVitals';
 import Homepage from './Homepage'
 import WriteMessage from './WriteMessage'
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+ } from "react-router-dom";
+
+const Idk = () => {
+  return(
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path="WriteMessage" element={<WriteMessage/>}/>
+      </Routes>
+    </Router>
+  );
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Homepage />
-  </React.StrictMode>
+    <Idk/>
 );
 
 // If you want to start measuring performance in your app, pass a function

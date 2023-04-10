@@ -21,6 +21,7 @@
     background-color: cornflowerblue;
     color: white;
     border-radius: 20px;
+    font-size: large;
 }
 
 .btn:hover{
@@ -34,7 +35,6 @@
 .background {
     margin-top: 0px;
     background-color: bisque;
-    white-space: nowrap;
     overflow-x: auto;
 }
 
@@ -80,3 +80,58 @@
     width:200px;
     height:200px;
 }
+
+.margin10 {
+    margin: 10px;
+}
+
+.savememory {
+    margin-left: 100px;
+}
+
+.headerline {
+    width: 50%;
+    text-align: left;
+    height:1px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    display:inline-block;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color:white;
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    margin-left: 25px;
+    margin-right:25px;
+    margin-top:25px;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+  }
+
+  .cardtext {
+    display: inline-block;
+    word-wrap:normal;
+    width: 280px;
+    margin: 10px;
+    overflow-y: hidden;
+  }
+
+  .nopic {
+    height: 235px;
+  }
+
+  .withpic {
+    height: 50px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
